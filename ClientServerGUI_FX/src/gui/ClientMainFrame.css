@@ -1,0 +1,10 @@
+.button {
+    -fx-background-color: #336699;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+}
+
+.label {
+    -fx-font-weight: bold;
+}

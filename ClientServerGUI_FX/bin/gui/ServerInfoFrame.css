@@ -1,0 +1,10 @@
+.text-area {
+    -fx-font-family: monospace;
+    -fx-font-size: 12px;
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #ccc;
+}
+
+.label {
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="gui.ServerInfoFrameController"
+            prefHeight="400.0" prefWidth="500.0">
+    <children>
+
+        <Label layoutX="20" layoutY="20" text="Connected Clients:" />
+        <TextArea fx:id="clientInfoArea" layoutX="20" layoutY="50" prefWidth="460" prefHeight="200"
+                  wrapText="true" editable="false"/>
+
+        <Label fx:id="statusLabel" layoutX="20" layoutY="270" style="-fx-text-fill: green;" />
+
+        <Button layoutX="20" layoutY="310" mnemonicParsing="false" text="Exit" onAction="#exitApp" />
+
+    </children>
+</AnchorPane>
