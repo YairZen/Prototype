@@ -3,7 +3,7 @@ package Server;
 import gui.ServerInfoFrameController;
 import javafx.application.Application;
 import javafx.stage.Stage;
-
+//yair
 public class ServerUI extends Application {
 
     final public static int DEFAULT_PORT = 5555;
