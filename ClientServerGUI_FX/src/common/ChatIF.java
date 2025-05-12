@@ -5,18 +5,21 @@
 package common;
 
 /**
- * This interface implements the abstract method used to display
- * objects onto the client or server UIs.
+ * This interface implements the abstract method used to display objects onto
+ * the client or server UIs.
  *
  * @author Dr Robert Lagani&egrave;re
  * @author Dr Timothy C. Lethbridge
  * @version July 2000
  */
-public interface ChatIF 
-{
-  /**
-   * Method that when overriden is used to display objects onto
-   * a UI.
-   */
-  public abstract void display(String message);
+
+//make sure that any class implementing this interface can display messages to a user interface
+//this interface defines a contract for displaying messages on client or server UIs
+public interface ChatIF {
+	/**
+	 * Method that when overriden is used to display objects onto a UI.
+	 */
+
+// make sure that a given message is displayed to the user interface
+	public abstract void display(String message);
 }

@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 public class DBcontroler {
 
+	// make sure that the MySQL driver is loaded and a test connection is
+	// established
 	public static void connectToDB() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
@@ -27,11 +29,14 @@ public class DBcontroler {
 		}
 	}
 
-	// ✅ נדרש ע"י OrderHandler
+	// make sure that a valid connection object is returned for executing SQL
+	// queries
 	public static Connection getConnection() throws SQLException {
 		return DriverManager.getConnection("jdbc:mysql://localhost/dbprototype?serverTimezone=IST", "root", "Aa123456");
 	}
 
+	// make sure that a new student record is inserted into the 'student' table in
+	// the database
 	public static void saveUserToDB(ArrayList<String> student) {
 		String insertQuery = "INSERT INTO student (id, pname, lname, fc) VALUES ('" + student.get(1) + "', '"
 				+ student.get(0) + "', '" + student.get(2) + "', '" + student.get(3) + "');";
