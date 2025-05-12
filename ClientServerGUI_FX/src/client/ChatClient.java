@@ -53,13 +53,14 @@ public class ChatClient extends AbstractClient {
         }
     }
 
-    public void sendToServer(Object obj) {
+    public void sendObject(Object obj) {
         try {
-            super.sendToServer(obj);
+            sendToServer(obj); // קורא למתודה המקורית (final)
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
+
 
     public void quit() {
         try {

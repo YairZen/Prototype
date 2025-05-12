@@ -41,13 +41,13 @@ public class ClientController implements ChatIF {
   }
 
   // 🔽 הוספה חדשה: בקשת כל ההזמנות
-  public void requestAllOrders() {
+  public void requestAllOrders() throws IOException {
     Message msg = new Message(MessageType.GET_ALL_ORDERS, null);
     client.sendToServer(msg);
   }
 
   // 🔽 הוספה חדשה: עדכון הזמנה
-  public void updateOrder(int orderNumber, int parkingSpace, Date orderDate) {
+  public void updateOrder(int orderNumber, int parkingSpace, Date orderDate) throws IOException {
     Object[] data = { orderNumber, parkingSpace, orderDate };
     Message msg = new Message(MessageType.UPDATE_ORDER, data);
     client.sendToServer(msg);

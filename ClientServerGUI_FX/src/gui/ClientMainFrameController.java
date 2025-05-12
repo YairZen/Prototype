@@ -1,5 +1,6 @@
 package gui;
 
+import java.io.IOException;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.util.List;
@@ -64,7 +65,7 @@ public class ClientMainFrameController {
         });
     }
 
-    public void loadOrders() {
+    public void loadOrders() throws IOException {
         ClientUI.chat.requestAllOrders();
     }
 
